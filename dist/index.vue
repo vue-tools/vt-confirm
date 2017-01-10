@@ -1,8 +1,10 @@
 <style src="./style.css"></style>
 <template src="./template.html"></template>
-
 <script>
-    export default {
+    import Vue from 'vue'
+    import plugin from './plugin'
+
+    let Component = {
         props: {
             visible: {
                 type: Boolean,
@@ -28,4 +30,8 @@
             }
         }
     }
+
+    Vue.use(plugin(Component))
+    
+    export default Component
 </script>
