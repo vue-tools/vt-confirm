@@ -28,7 +28,7 @@
                                     <div class={{"ui-confirm__button--ok": true, "ui-confirm-button--access": this.confirmAccess}} onClick={this.emit.bind(this, true)} onTouchstart={this.confirmHandle.bind(this, 0)} touchend={this.confirmHandle.bind(this, 200)}>
                                         {this.$slots.confirmButton || '确定'}
                                     </div>
-                                    <div class={{"ui-confirm__button--cancel": true, "ui-confirm-button--access": this.cancelAccess}} onClick={this.emit.bind(this, false)} onTouchstart={this.confirmHandle.bind(this, 0)} touchend={this.confirmHandle.bind(this, 200)}>
+                                    <div class={{"ui-confirm__button--cancel": true, "ui-confirm-button--access": this.cancelAccess}} onClick={this.emit.bind(this, false)} onTouchstart={this.cancelHandle.bind(this, 0)} touchend={this.cancelHandle.bind(this, 200)}>
                                         {this.$slots.cancelButton || '取消'}
                                     </div>
                                 </div>
